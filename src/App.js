@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { ProgressBar, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const county = 35;
+  const country = 20;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="progressPage">
+      <h3>React Bootstrap Progress Bar Demo</h3>
+      <div className="progressBars">
+        <br></br>
+        <p className="progressLabel">County Coverage: </p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <ProgressBar className="ProgressBar" now={county} label={`${county}%`}/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <br></br>
+        <p className="progressLabel">Country Coverage: </p>
+        <p>
+          <ProgressBar className="ProgressBar" now={country} label={`${country}%`}/>
+        </p>
+      </div>
     </div>
   );
 }

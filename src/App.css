@@ -24,6 +24,18 @@
   color: white;
 }
 
+.progressLabel {
+  line-height: 10px;
+  float: left;
+  margin-left: 1.5em;
+}
+
+.ProgressBar {
+  width: 200px;
+  float: left;
+  margin-left: 1.5em;
+}
+
 .App-link {
   color: #61dafb;
 }
