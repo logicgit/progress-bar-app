@@ -13,7 +13,7 @@ function App() {
         <br></br>
         <p className="progressLabel">County Coverage: </p>
         <p>
-          <ProgressBar className="ProgressBar" now={county} label={`${county}%`}/>
+          <ProgressBar onClick={handleClick} style={{cursor:'pointer'}} className="ProgressBar" now={county} label={`${county}%`}/>
         </p>
         <br></br>
         <p className="progressLabel">Country Coverage: </p>
@@ -24,5 +24,7 @@ function App() {
     </div>
   );
 }
+
+const handleClick = () => {console.log("Hello world!");}
 
 export default App;
